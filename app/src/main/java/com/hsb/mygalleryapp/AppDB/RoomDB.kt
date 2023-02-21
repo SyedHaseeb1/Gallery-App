@@ -1,12 +1,12 @@
-package com.hsb.mygalleryapp.data.local.AppDB
+package com.hsb.mygalleryapp.AppDB
 
 import android.content.Context
 import android.util.Log
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.hsb.mygalleryapp.data.local.AppDao.AppDao
-import com.hsb.mygalleryapp.data.Models.FavModel
+import com.hsb.mygalleryapp.AppDao.AppDao
+import com.hsb.mygalleryapp.Models.FavModel
 
 
 @Database(

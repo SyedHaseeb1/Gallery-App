@@ -1,7 +1,7 @@
-package com.hsb.mygalleryapp
+package com.hsb.mygalleryapp.MyApp
 
 import android.app.Application
-import com.hsb.mygalleryapp.data.Di.ImagesModule
+import com.hsb.mygalleryapp.Di.ImagesModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 

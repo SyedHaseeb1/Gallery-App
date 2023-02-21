@@ -1,4 +1,4 @@
-package com.hsb.mygalleryapp.data.Models
+package com.hsb.mygalleryapp.Models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
