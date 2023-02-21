@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBg">
+
+    <com.ortiz.touchview.TouchImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:fitsSystemWindows="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:focusedByDefault="true"
+        android:src="@drawable/ic_gallery" />
+</androidx.constraintlayout.widget.ConstraintLayout>

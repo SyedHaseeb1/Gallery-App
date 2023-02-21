@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_folder">
+    <fragment
+        android:id="@+id/navigation_folder"
+        android:name="com.hsb.mygalleryapp.ui.folder.FoldersFragment"
+        android:label="All Folders"
+        tools:layout="@layout/fragment_folders">
+        <action
+            android:id="@+id/action_navigation_folder_to_navigation_gallery"
+            app:destination="@id/navigation_gallery" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_gallery"
+        android:name="com.hsb.mygalleryapp.ui.gallery.GalleryFragment"
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/action_navigation_gallery_to_navigation_preview"
+            app:destination="@id/navigation_preview" />
+
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_fav"
+        android:name="com.hsb.mygalleryapp.ui.favrourite.FavFragment"
+        android:label="@string/title_fav"
+        tools:layout="@layout/fragment_fav">
+        <action
+            android:id="@+id/action_navigation_fav_to_navigation_preview"
+            app:destination="@id/navigation_preview" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_preview"
+        android:name="com.hsb.mygalleryapp.ui.preview.ImagePreviewFragment"
+        android:label="Preview"
+        app:enterAnim="@anim/openfragment"
+        app:exitAnim="@anim/exitfragment"
+        app:popEnterAnim="@anim/openfragment"
+        app:popExitAnim="@anim/exitfragment"
+        tools:layout="@layout/fragment_image_preview">
+        <argument
+            android:name="position"
+            app:argType="integer" />
+        <argument
+            android:name="uri"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_folder"
+        android:icon="@drawable/ic_gallery"
+        android:title="@string/title_gallery" />
+
+    <item
+        android:id="@+id/navigation_fav"
+        android:icon="@drawable/heartfill"
+        android:title="@string/title_fav" />
+
+
+</menu>
